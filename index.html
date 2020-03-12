@@ -3,69 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Biodata</title>
-    <style>
-      * {
-        font-family: Roboto, "Segoe UI", Tahoma, sans-serif;
-      }
-      body {
-        margin: 0;
-        padding: 0;
-        background: rgb(53, 195, 34);
-        background: radial-gradient(
-          circle,
-          rgba(53, 195, 34, 0.5914740896358543) 23%,
-          rgba(83, 45, 253, 0.36738445378151263) 100%
-        );
-      }
-      .container::before {
-        filter: blur(5px);
-
-        background-size: cover;
-        opacity: 0.6;
-      }
-      .container {
-        width: 80%;
-        margin: auto;
-        background-color: #ffffff;
-        /* opacity: 0.4; */
-        margin-top: 50px;
-        position: relative;
-      }
-
-      .card_image {
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
-        width: 15%;
-      }
-      .card {
-        padding: 50px;
-      }
-      .title,
-      .subtitle {
-        text-align: center;
-      }
-      .title,
-      h1 {
-        font-weight: lighter;
-      }
-      .title span {
-        font-weight: bold;
-      }
-    </style>
+    <title>Simple Page</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
+    <!-- HEADER -->
+    <div class="bg-blur"></div>
+    <header class="header">
+      <img src="assets/img/profile.jpg" alt="Profile" class="img-profile" />
+      <h1>Welcome</h1>
+      <div class="top-menu">
+        <ul>
+          <li>HOME</li>
+          <li>BLOG</li>
+          <li>ABOUT</li>
+          <li>CONTACT</li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- BODY -->
     <div class="container">
-      <div class="card">
-        <div class="image">
-          <img src="profile.jpg" alt="Profile" class="card_image" />
+      <!-- 2column -->
+      <div class="row">
+        <div class="colm">
+          kolom 1
         </div>
-        <div class="title">
-          <h1>Hi ..! Saya <span>Rizqi Khoirurrohman</span></h1>
+        <div class="colm">
+          kolom 2
         </div>
-        <div class="subtitle">Saya adalah Frontend, Backend, Linux Geeks</div>
       </div>
     </div>
+
+    <!-- FOOTER -->
+    <footer>
+      footer
+    </footer>
   </body>
 </html>
