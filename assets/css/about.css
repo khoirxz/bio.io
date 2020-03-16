@@ -19,6 +19,18 @@
   margin: auto;
   margin-bottom: 1rem;
 }
+
+.social {
+  text-align: center;
+}
+
+.social a {
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+}
+
 @media all and (max-width: 768px) {
   .profile {
     border-radius: 100px;

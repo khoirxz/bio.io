@@ -170,3 +170,7 @@ footer {
   background-color: #00b499;
   height: 30px;
 }
+
+.copyright {
+  text-align: end;
+}
