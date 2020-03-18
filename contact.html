@@ -51,7 +51,9 @@
               class="input-textarea"
               placeholder="Ex: Templatenya keren mas ! buatin dong..."
             ></textarea>
-            <button type="button" class="form-button">Kirim</button>
+            <button type="button" onclick="myScript()" class="form-button">
+              Kirim
+            </button>
           </form>
         </div>
       </div>
@@ -61,13 +63,11 @@
         <div class="foot-container">
           <div class="foot-row">
             <div class="foot-column">
-              <p>Terimakasih Support dari :</p>
+              <p>Library :</p>
               <ul>
-                <li>Allah SWT</li>
-                <li>Keluarga</li>
-                <li>Tetangga</li>
-                <li>Hewan</li>
-                <li>Tumbuhan</li>
+                <li>FontAwesome</li>
+                <li>Google Font</li>
+                <li>flatuicolors</li>
               </ul>
             </div>
             <div class="foot-column">
@@ -89,5 +89,17 @@
       src="https://kit.fontawesome.com/b2cfab55b9.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      function myScript() {
+        let email = document.getElementById("email").value;
+        let message = document.getElementById("message").value;
+
+        if (email === "" || message === "") {
+          alert("lengkapi form !");
+        } else {
+          alert("terkirim");
+        }
+      }
+    </script>
   </body>
 </html>
